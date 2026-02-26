@@ -10,7 +10,6 @@ st.write("قم برفع ملف الإكسيل ثم ادخل رقم الجلوس 
 # قراءة الملف مباشرة من مجلد المشروع
 df = pd.read_excel("results_file.xlsx")
 
-if uploaded_file is not None:
     try:
         # قراءة البيانات
         df = pd.read_excel(uploaded_file)
