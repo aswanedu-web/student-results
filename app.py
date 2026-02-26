@@ -35,7 +35,6 @@ if uploaded_file is not None:
                     
                     if not result.empty:
                         st.balloons()
-                        st.subheader(f"نتيجة الطالب: {result.iloc[0].get('الاسم', 'غير متوفر')}")
                         
                         # عرض البيانات في جدول منسق
                         st.table(result.T)
