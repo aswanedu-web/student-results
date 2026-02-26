@@ -7,8 +7,8 @@ st.set_page_config(page_title="نتائج الشهادة الإعدادية", pa
 st.title("🎓 نظام استعلام نتائج الشهادة الإعدادية")
 st.write("قم برفع ملف الإكسيل ثم ادخل رقم الجلوس للاستعلام")
 
-# رفع ملف الإكسيل
-uploaded_file = st.file_uploader("اختر ملف الإكسيل (Excel)", type=["xlsx", "xls"])
+# قراءة الملف مباشرة من مجلد المشروع
+df = pd.read_excel("results_file.xlsx")
 
 if uploaded_file is not None:
     try:
